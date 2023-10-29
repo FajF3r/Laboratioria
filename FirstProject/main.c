@@ -24,21 +24,71 @@
                 }
         }
 
-        int mathbigg(int a,int b,int c){
-        if (a>b && a>c){
-            printf("%d", a);
-        }else if(b>a && b>c){
-            printf("%d"c b);
-        }else{
-            printf("%d", c);
+        void mathbigg(int a,int b,int c){
+            if (a>b && a>c){
+                printf("%d", a);
+            }else if(b>a && b>c){
+                printf("%d", b);
+            }else{
+                printf("%d", c);
+            }
         }
 
+        void isAscii(){
+            int select, a;
+            char b;
+            printf("int = 1 / char = 2 \n");
+            scanf("%d", select);
+            if (select==1){
+                printf("podaj liczbe \n");
+                scanf("%d", &a);
+                if(a>=65 && a<=90 || a>=97 && a<=122){
+                    printf("+");
+                }else{
+                    printf("-");
+                }
+            }else if(select==2){
+                printf("podaj liczbe \n");
+                scanf("%c", &b);
+                a=(int)b;
+                if(a>=65 && a<=90 || a>=97 && a<=122){
+                    printf("+");
+                }else{
+                    printf("-");
+                }
+            }
+        }
+
+        void isLeapYear(int a){
+            if(a%4==0){
+                printf("jest przestepny");
+            }else{
+                printf("nie jest");
+            }
+        }
+
+        void isDate(int a,int b,int c){
+            if(a>=1 && a<=12 && b%2==0 && b>=1 && b<=31 && c>0){
+                printf("poprawna data");
+            }else if(a>=1 && a<=12 && b%2==1 && b>=1 && b<=31 && c>0){
+                printf("poprawna");
+            }else if(b==2 && a>28 && c%4==0){
+                printf("bledna data");
+            }else{
+                printf("bledna data");
+            }
+        }
 
 int main(){
-
-scanf("%d %d",&a, &b);
-mathbigg(a,b);
+/*scan for mathBigg*/
+//scanf("%d %d %d",&a, &b, &c);
+/*scan for rest*/
+//scanf("%d %d",&a, &b);
+//mathbigg(a,b,c);
 //mathOperations(a,b);
 //mathBig(a,b);
-
+//isAscii();
+//scanf("%d",&a);
+//isLeapYear(a);
+isDate(31,4,2000);
 }
