@@ -79,6 +79,38 @@
             }
         }
 
+        void guessNumber(int a){
+            char b = 4;
+            char stop = 4;
+            printf("podaj liczbe");
+            scanf("%d", a);
+            if(a!=b && stop == 4){
+                printf("-");
+                stop -= 1;
+                printf("twoje zycia %c", stop);
+                scanf("%d", a);
+            }else if(a!=b && stop == 3){
+                printf("-");
+                stop -= 1;
+                printf("twoje zycia %c", stop);
+                scanf("%d", a);
+            }else if(a!=b && stop == 2){
+                printf("-");
+                stop -= 1;
+                printf("twoje zycia %c", stop);
+                scanf("%d", a);
+            }else if(a!=b && stop == 1){
+                printf("-");
+                stop -= 1;
+                printf("twoje zycia %c", stop);
+                scanf("%d", a);
+            }else if(a!=b && stop == 0){
+                printf("-");
+                return 0;
+            }else{
+                printf("+");
+            }
+        }
 int main(){
 /*scan for mathBigg*/
 //scanf("%d %d %d",&a, &b, &c);
@@ -90,5 +122,6 @@ int main(){
 //isAscii();
 //scanf("%d",&a);
 //isLeapYear(a);
-isDate(31,4,2000);
+//isDate(31,4,2000);
+guessNumber(3);
 }
