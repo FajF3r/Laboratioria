@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1699181138 source:/home/LABPK/apitrowski/git/Laboratioria/petleZadania/main.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+
