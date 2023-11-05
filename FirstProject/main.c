@@ -123,5 +123,5 @@ int main(){
 //scanf("%d",&a);
 //isLeapYear(a);
 //isDate(31,4,2000);
-guessNumber(3);
+//guessNumber(3);
 }
