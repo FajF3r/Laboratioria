@@ -15,7 +15,7 @@ char str;
 
 int main()
 {
-    char word[kajak];
+    char word[] = "kajak";
 
     scanf("%s", word);
 
