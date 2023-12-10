@@ -10,7 +10,7 @@ int *ptrc = &c;
 
 int temp;
 int set(int ptra,int ptrb, int ptrc){
-    if (ptra>ptrb)
+    if (ptra>ptrb && ptra>ptrc)
     {
         if (ptrb>ptrc)
         {
@@ -18,7 +18,7 @@ int set(int ptra,int ptrb, int ptrc){
         }else{
             printf("%d,%d,%d",ptra,ptrc,ptrb);
         }
-    }else if (ptrb>ptra)
+    }else if (ptrb>ptra && ptrb>ptrc)
     {
         if (ptra>ptrc)
         {
@@ -26,7 +26,7 @@ int set(int ptra,int ptrb, int ptrc){
         }else{
             printf("%d,%d,%d",ptrb,ptrc,ptra);
         }
-    }if (ptrc>ptrb)
+    }else if (ptrc>ptrb && ptrc>ptra)
     {
         if (ptrb>ptra)
         {
@@ -40,6 +40,6 @@ int set(int ptra,int ptrb, int ptrc){
 
 int main()
 {
-    set(ptra,ptrb,ptrc);
+    set(*ptra,*ptrb,*ptrc);
     return 0;
 }
