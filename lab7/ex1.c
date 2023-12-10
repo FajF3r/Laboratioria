@@ -2,7 +2,7 @@
 
 int glob;
 
-    int addres(int a, int b){
+    int addres(int *a, int b){
         printf("%p, %p", &a, &b);
     }
 
