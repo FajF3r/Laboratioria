@@ -4,7 +4,7 @@ int temp;
 int tab[3]={1,5,2};
 int *ptr = &tab[0];
 
-int maxNum(int *ptr,int tab[]){
+int maxNum(int ptr,int tab[]){
     int i;
     for (i = 0; i < 3; i++)
     {
